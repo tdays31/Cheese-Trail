@@ -1,0 +1,92 @@
+# =============== #
+# Unity Generated #
+# =============== #
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+
+# Unity crash reports
+sysinfo.txt
+
+# =========== #
+# OS Specific #
+# =========== #
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.nfs*
+
+# =============== #
+# Visual Studio   #
+# =============== #
+
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# ============== #
+# Unity Packages #
+# ============== #
+
+# Package Manager
+Packages/com.unity.package-manager-ui/
+
+# ============= #
+# Build Artifacts
+# ============= #
+
+*.apk
+*.aab
+*.xcodeproj/
+*.xcworkspace/
+
+# ================== #
+# Asset Store Tools   #
+# ================== #
+
+Assets/AssetStoreTools*
+
+# =============== #
+# Auto-generated   #
+# =============== #
+
+*.unitypackage
+
+# Logs
+*.log
+
+# =============== #
+# Addressables     #
+# =============== #
+
+Library/com.unity.addressables/
