@@ -118,7 +118,7 @@ TilePrefab
 ```
 
 ### UI/UX 디자인
-- **와이어프레임**: 별도 이미지로 추가 예정
+- **레이아웃 참조**: [UI.png](UI.png) - 게임 화면 와이어프레임
 - **모바일 최적화**: 터치 UI, 제스처 지원
 - **접근성**: 색맹 모드 고려
 
@@ -128,14 +128,14 @@ TilePrefab
 
 ### 게임 모드
 #### 1. 로컬 모드
-- AI 대전 (난이도: 쉬움/보통/어려움)
+- AI 대전 (기본 난이도: **보통**)
 - 오프라인 연습 모드
 - 튜토리얼
 
 #### 2. 멀티플레이 모드
-- **기술 스택** (미정):
-  - Option A: Photon Fusion / PUN2 (Unity 네이티브)
-  - Option B: WebSocket (자체 서버)
+- **기술 스택**: WebSocket 기반 자체 서버
+  - Unity: WebSocketSharp 또는 NativeWebSocket
+  - 서버: Node.js + Socket.io (또는 Golang)
 - **매칭 방식**:
   - 빠른 매칭
   - 친구 초대 (룸 코드)
@@ -159,7 +159,7 @@ TilePrefab
 ## 🛠️ 개발 환경
 
 ### Unity 설정
-- **Unity 버전**: 2022.3 LTS 권장 (또는 현재 프로젝트 버전)
+- **Unity 버전**: 6000.1.17f1 (Unity 6)
 - **프로젝트 타입**: 2D
 - **빌드 타겟**: Android (1차), iOS/WebGL (2차)
 
@@ -167,7 +167,7 @@ TilePrefab
 - TextMeshPro (UI)
 - 2D Sprite (그래픽)
 - [선택] DOTween (애니메이션)
-- [멀티플레이] Photon PUN2 또는 WebSocket 라이브러리
+- [멀티플레이] WebSocket 라이브러리 (WebSocketSharp 또는 NativeWebSocket)
 
 ### 개발 도구
 - **IDE**: Visual Studio 2022 / Rider
@@ -190,11 +190,12 @@ TilePrefab
   - [ ] 종족 충돌 체크
   - [ ] 조커 규칙 처리
 - [ ] 최초 등록 (12점 이상) 체크
-- [ ] AI 상대 구현 (기본 난이도)
+- [ ] AI 상대 구현 (보통 난이도 - 탐욕 알고리즘)
 - [ ] 튜토리얼
 
 ### 3단계 – 멀티플레이 구현 🌐
-- [ ] 네트워크 프레임워크 선택 및 적용
+- [ ] WebSocket 라이브러리 적용 (Unity)
+- [ ] WebSocket 서버 구현 (Node.js/Golang)
 - [ ] 룸 생성/입장 시스템
 - [ ] 턴 동기화
 - [ ] 플레이어 이탈 처리
